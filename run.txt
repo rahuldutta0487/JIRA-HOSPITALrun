@@ -1,0 +1,46 @@
+169  git clone https://github.com/rahuldutta0487/Hospital-Applicationn.git
+  170  ls
+  171  cd Hospital-Applicationn
+  172  ls
+  173  docker build -t hospital-app:1.0.0 .
+  174  docker images
+  175  docker build -t rahuldutta0487/hospital-app:1.0.0 .
+  176  docker run -d --name hospital-app -p 5000:5000 rahuldutta0487/hospital-app:1.0.0
+  177  docker login
+  178  docker push rahuldutta0487/hospital-app:1.0.0
+  179  eksctl create cluster -f eks/cluster.yaml
+  180  aws eks update-kubeconfig --region eu-north-1 --name hospital-eks
+  181  kubectl get nodes
+  182  kubectl apply -f k8s/config-and-secret.yaml
+  183  kubectl apply -f k8s/mongodb-statefulset.yaml
+  184  kubectl apply -f k8s/app-deployment.yaml
+  185  kubectl get pods
+  186  kubectl logs hospital-app-bdb495bd9-298rd
+  187  kubectl get pods
+  188  kubectl get svc
+  189  history
+  190  kubectl get pvc
+  191  kubectl describe pod mongodb-0
+  192  cd /home/ubuntu/Hospital-Applicationn
+  193  ls helm
+  194  tree helm
+  195  ls
+  196  helm create hospital-chart
+  197  history
+  198  helm create hospital-chart
+  199  cd helm
+  200  helm create hospital-chart
+  201  cd /home/ubuntu
+  202  ls
+  203  cd Hospital-Applicationn
+  204  curl https://raw.githubusercontent.com/helm/helm/main/scripts/get-helm-3 | bash
+  205  cd /home/ubuntu/Hospital-Applicationn
+  206  mkdir helm
+  207  cd helm
+  208  helm create hospital-chart
+  209  ls
+  210  tree
+  211  cd ..
+  212  ls
+  213  history
+root@ip-172-31-0-247:/home/ubuntu/Hospital-Applicationn#
