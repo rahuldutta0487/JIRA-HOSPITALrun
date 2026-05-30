@@ -1,4 +1,4 @@
-root@ip-172-31-7-54:/home/ubuntu/Hospital-Applicationn# history
+root@ip-172-31-7-54:/home/ubuntu# history
     1  apt-get update -y
     2  nano cluster.sh
     3  chmod 777 cluster.sh
@@ -83,4 +83,26 @@ root@ip-172-31-7-54:/home/ubuntu/Hospital-Applicationn# history
    82  kubectl get pods
    83  kubectl get svc
    84  history
-root@ip-172-31-7-54:/home/ubuntu/Hospital-Applicationn#
+   85  cd ..
+   86  history
+   87  ls
+   88  curl https://raw.githubusercontent.com/helm/helm/main/scripts/get-helm-3 | bash
+   89  cd Hospital-Applicationn
+   90  ls
+   91  curl https://raw.githubusercontent.com/helm/helm/main/scripts/get-helm-3 | bash
+   92  mkdir helm
+   93  cd helm
+   94  helm create hospital-chart
+   95  ls
+   96  tree
+   97  apt update
+   98  apt install tree -y
+   99  tree
+  100  cd..
+  101  ls
+  102  cd ..
+  103  ls
+  104  history
+  105  cd ..
+  106  history
+root@ip-172-31-7-54:/home/ubuntu#
