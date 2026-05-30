@@ -1,0 +1,86 @@
+root@ip-172-31-7-54:/home/ubuntu/Hospital-Applicationn# history
+    1  apt-get update -y
+    2  nano cluster.sh
+    3  chmod 777 cluster.sh
+    4  ./cluster.sh
+    5  aws --version
+    6  aws configure
+    7  eksctl create cluster --name rahul --version 1.31 --region us-west-2 --nodegroup-name rahulng --node-type t3.medium --nodes 1 --nodes-min 1 --nodes-max 2 --managed
+    8  kubectl get nodes
+    9  kubetl get pods -A
+   10  kubetl get pods
+   11  kubectl get pods -A
+   12  git clone https://github.com/rahuldutta0487/Hospital-Applicationn.git
+   13  ls
+   14  cd Hospital-Applicationn
+   15  ls
+   16  docker built -t rahuldutta0487/hospital-app:1.0.0 .
+   17  apt update
+   18  apt install docker.io -y
+   19  systemctl start docker
+   20  systemctl enable docker
+   21  docker --version
+   22  docker build -t rahuldutta0487/hospital-app:1.0.0 .
+   23  docker images
+   24  doccker run -d --name hospital-app -p 5000:5000 rahuldutta0487/hospital-app:1.0.0
+   25  docker run -d --name hospital-app -p 5000:5000 rahuldutta0487/hospital-app:1.0.0
+   26  docker ps
+   27  docker ps -a
+   28  docker logs hospital-app
+   29  docker ps
+   30  docker logs hospital-app
+   31  curl http://localhost:5000
+   32  docker ps -a
+   33  docker logs hospital-app
+   34  cat Dockerfile
+   35  cat package.json
+   36  nano Dockerfile
+   37  ls backend
+   38  nano Dockerfile
+   39  docker rm -f hospital-app
+   40  docker build -t rahuldutta0487/hospital-app:1.0.0 .
+   41  docker run -d --name hospital-app -p 5000:5000 rahuldutta0487/hospital-app:1.0.0
+   42  docker ps
+   43  curl http://localhost:5000
+   44  docker rm -f hospital-app mongo
+   45  docker network create hospital-net
+   46  docker run -d --name mongo   --network hospital-net   -p 27017:27017   mongo:6
+   47  docker run -d --name hospital-app   --network hospital-net   -p 5000:5000   -e MONGO_URL=mongodb://mongo:27017/hospital   -e MONGODB_URL=mongodb://mongo:27017/hospital   rahuldutta0487/hospital-app:1.0.0
+   48  docker ps
+   49  docker logs hospital-app
+   50  curl http://localhost:5000
+   51  docker logs hospital-app
+   52  COPY public /public
+   53  nano Dockerfile
+   54  docker rm -f hospital-app
+   55  docker build -t rahuldutta0487/hospital-app:1.0.0 .
+   56  docker run -d --name hospital-app   --network hospital-net   -p 5000:5000   -e MONGO_URL=mongodb://mongo:27017/hospital   -e MONGODB_URL=mongodb://mongo:27017/hospital   rahuldutta0487/hospital-app:1.0.0
+   57  docker ps
+   58  curl http://localhost:5000
+   59  curl ifconfig.me
+   60  ls
+   61  cd ..
+   62  ls
+   63  cd Hospital-Applicationn
+   64  ls
+   65  nano Dockerfile
+   66  docker images
+   67  docker login
+   68  docker login -u rahuldutta0487
+   69  docker tag rahuldutta0487/hospital-app:1.0.0 rahuldutta0487/hospital-app:1.0.0
+   70  docker push rahuldutta0487/hospital-app:1.0.0
+   71  kubectl get nodes
+   72  ls
+   73  cd k8s
+   74  ls
+   75  cd ..
+   76  kubectl apply -f k8s/storageclass.yaml
+   77  kubectl apply -f k8s/config-and-secret.yaml
+   78  kubectl apply -f k8s/mongodb-statefulset.yaml
+   79  kubectl apply -f k8s/app-deployment.yaml
+   80  kubectl get pods
+   81  kubectl delete pod hospital-app-bdb495bd9-dz9x6
+   82  kubectl get pods
+   83  kubectl get svc
+   84  history
+root@ip-172-31-7-54:/home/ubuntu/Hospital-Applicationn#
